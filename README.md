@@ -2,7 +2,7 @@
 
 ## Author, maintainer and contact
 
-**João V. S. do Valle-Pereira**: joao.vallepereira@gmail.com       
+**João V. S. do Valle-Pereira**[![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](http://orcid.org/0000-0002-1880-9495): joao.vallepereira@gmail.com       
 
 *Laboratório de Mamíferos Aquáticos, Universidade Federal de Santa Catarina, CCB/ECZ, Florianópolis, SC 88010-970, Brazil.*       
 
@@ -12,28 +12,23 @@
 
 This repository includes the R script to reproduce the analyses and the supplementary material of the manuscript:     
 
-Valle-Pereira J.V.S, Cantor M., Machado A.M.S., Farine D.R., Daura-Jorge F.G. 2021. Behavioural traits influence foraging success of artisanal net-casting fishers who interact with wild dolphins. ICES Journal of Marine Science.  
+Valle-Pereira, J.V.S [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](http://orcid.org/0000-0002-1880-9495); Cantor, M. [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](http://orcid.org/0000-0002-0019-5106), Machado, A.M.S. [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](http://orcid.org/0000-0001-6252-6890); Farine, D.R. [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](http://orcid.org/0000-0003-2208-7613); Daura-Jorge, F. G.  [![](https://orcid.org/sites/default/files/images/orcid_16x16.png)](http://orcid.org/0000-0003-2923-1446). Behavioural traits influence foraging success of artisanal net-casting fishers who interact with wild dolphins. *In prep*.
+
 
 ## Contents
 1. Files and directions
-	1. Data and script to reproduce the analysis
-	2. Supplementary material
-	3. Instructions
-
+	1.1. Data and script to reproduce the analysis
+	1.2. Supplementary material
+	1.3. Instructions
 
 ### 1.1. Data and script to reproduce the analysis
 
-**vallepereiraetal_modeling.R**
+- `setup.R`: This file contains the code to install and load the packages required to run the analyses in `vallepereiraetal_modeling.R`.
 
-Summary: This file contains the R Script to run the analyses of the manuscript.
+- `data_fisher_modeling.rds`: This file contains the data to run the analyses in the file `vallepereiraetal_modeling.R`.
 
-**setup.R**
+- `vallepereiraetal_modeling.R`: This file contains the code to run the analyses of the manuscript.
 
-Summary: This file contains the R Script to run the custom functions required in the file vallepereiraetal_modeling.R.
-
-**data_fisher_modeling.rds**
-
-Summary: This file contains the data to run the analyses in the file vallepereiraetal_modeling.R.
 
 ### 1.2. Supplementary material
 
@@ -41,25 +36,14 @@ The supplementary material can be reproduced by knitting the R Markdown file in 
 
 ### 1.3. Instructions
 
-Scripts contain relative paths to source functions and load data. Open an R session and set the working directory to the root of the project for better compatibility with relative paths.
+Scripts contain relative paths to source functions and load data. Open an R session and set the working directory to the root of the project for better compatibility with relative paths. The tree below show how files were organized in the project folder:
 
-After opening the **vallepereiraetal_modeling.R** script you should run the code:
-
-```r
-source("./R/setup.R")
+```bash
+fisher_performance_laguna/
+├── data/                     # stores all the data used in the manuscript
+├── R/                        # stores tables, figures, and appendices.
+└── supplementary_material/   # stores analysis routines and custom functions
 ```
-to install and load the required packages.
-
-and run the code:
-
-```r
-data.fisher.2018.2019 <- readRDS(file = "./data/data_fisher_modeling.rds")
-```
-to load the fisher' behavior and environmental data necessary to reproduce the analyses.
-
-Run the code to follow de modelling procedures.
 
 ### This paper was produced using the following software and associated packages:
-
-      
 
