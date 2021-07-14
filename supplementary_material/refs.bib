@@ -1,0 +1,33 @@
+@article{Bates2015,
+abstract = {Maximum likelihood or restricted maximum likelihood (REML) estimates of the parameters in linear mixed-effects models can be determined using the lmer function in the lme4 package for R. As for most model-fitting functions in R, the model is described in an lmer call by a formula, in this case including both fixed- and random-effects terms. The formula and data together determine a numerical representation of the model from which the profiled deviance or the profiled REML criterion can be evaluated as a function of some of the model parameters. The appropriate criterion is optimized, using one of the constrained optimization functions in R, to provide the parameter estimates. We describe the structure of the model, the steps in evaluating the profiled deviance or REML criterion, and the structure of classes or types that represents such a model. Sufficient detail is included to allow specialization of these structures by users who wish to write functions to fit specialized linear mixed models, such as models incorporating pedigrees or smoothing splines, that are not easily expressible in the formula language used by lmer.},
+archivePrefix = {arXiv},
+arxivId = {1406.5823},
+author = {Bates, Douglas and M{\"{a}}chler, Martin and Bolker, Benjamin M. and Walker, Steven C.},
+doi = {10.18637/jss.v067.i01},
+eprint = {1406.5823},
+file = {:Users/machadoams/OneDrive/Mendeley/Bates et al. - 2015 - Fitting linear mixed-effects models using lme4.pdf:pdf},
+issn = {15487660},
+journal = {Journal of Statistical Software},
+keywords = {Cholesky decomposition,Linear mixed models,Penalized least squares,R,Sparse matrix methods,glmm,statistics},
+number = {1},
+title = {{Fitting linear mixed-effects models using lme4}},
+volume = {67},
+year = {2015}
+}
+
+@article{Stoffel2021,
+abstract = {The coefficient of determination R 2 quantifies the amount of variance explained by regression coefficients in a linear model. It can be seen as the fixed-effects complement to the repeatability R (intra-class correlation) for the variance explained by random effects and thus as a tool for variance decomposition. The R 2 of a model can be further partitioned into the variance explained by a particular predictor or a combination of predictors using semi-partial (part) R 2 and structure coefficients, but this is rarely done due to a lack of software implementing these statistics. Here, we introduce partR2 , an R package that quantifies part R 2 for fixed effect predictors based on (generalized) linear mixed-effect model fits. The package iteratively removes predictors of interest from the model and monitors the change in the variance of the linear predictor. The difference to the full model gives a measure of the amount of variance explained uniquely by a particular predictor or a set of predictors. partR2 also estimates structure coefficients as the correlation between a predictor and fitted values, which provide an estimate of the total contribution of a fixed effect to the overall prediction, independent of other predictors. Structure coefficients can be converted to the total variance explained by a predictor, here called ‘inclusive' R 2 , as the square of the structure coefficients times total R 2 . Furthermore, the package reports beta weights (standardized regression coefficients). Finally, partR2 implements parametric bootstrapping to quantify confidence intervals for each estimate. We illustrate the use of partR2 with real example datasets for Gaussian and binomial GLMMs and discuss interactions, which pose a specific challenge for partitioning the explained variance among predictors.},
+author = {Stoffel, Martin A. and Nakagawa, Shinichi and Schielzeth, Holger},
+doi = {10.7717/peerj.11414},
+file = {:Users/machadoams/OneDrive/Mendeley/Stoffel, Nakagawa, Schielzeth - 2021 - partR2 partitioning R 2 in generalized linear mixed models.pdf:pdf},
+issn = {2167-8359},
+journal = {PeerJ},
+keywords = {glmm,statistics},
+mendeley-tags = {glmm,statistics},
+month = {may},
+pages = {e11414},
+title = {{partR2 : partitioning R 2 in generalized linear mixed models}},
+url = {https://peerj.com/articles/11414},
+volume = {9},
+year = {2021}
+}

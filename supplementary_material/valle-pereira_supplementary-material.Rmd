@@ -1,0 +1,128 @@
+---
+title: "Supplementary Material for the article: \nBehavioural traits influence foraging success of artisanal net-casting fishers who interact with wild dolphins "
+
+author: João V. S. Valle-Pereira^1^*, Mauricio Cantor^1-6^†, Alexandre M.S. Machado^1,7^, Damien R. Farine^6-7^, Fábio G. Daura-Jorge^1^†*  
+
+always_allow_html: true
+
+output:
+  bookdown::word_document2:
+    fig_caption: yes
+    number_sections: yes
+    toc: true
+bibliography: "refs.bib"
+link_citations: true
+csl: ices-journal-of-marine-science.csl
+---
+
+*^1^ Departamento de Ecologia e Zoologia, Universidade Federal de Santa Catarina, Florianópolis, Brazil*
+
+*^2^ Department for the Ecology of Animal Societies, Max Planck Institute of Animal Behavior, Germany*
+
+*^3^ Centro de Estudos do Mar, Universidade Federal do Paraná, Pontal do Paraná, Brazil*
+
+*^4^ School of Animal, Plant and Environmental Sciences, University of the Witwatersrand, South Africa.*
+
+*^5^ Department of Fisheries, Wildlife and Conservation Sciences, Marine Mammal Institute, Oregon State University, USA*
+
+*^6^ Department of Evolutionary Biology and Environmental Science, University of Zurich, Switzerland*
+
+*^7^ Department of Collective Behaviour, Max Planck Institute of Animal Behavior, Germany*
+
+
+`*` Corresponding author: joao.vallepereira@gmail.com, daura.jorge@ufsc.br
+`†` Co-senior authorship
+
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+# set figure and table options
+knitr::opts_chunk$set(dpi=600,
+                      echo = FALSE,
+                      eval = TRUE,
+                      include = TRUE,
+                      results = "asis")
+
+# load packages
+if(!require(captioner)){remotes::install_github("adletaw/captioner")};library(captioner)
+if(!require(flextable)){install.packages("flextable")};library(flextable)
+
+# load packages
+source("./R/setup.R")
+
+# run analyses
+source("./R/vallepereiraetal_modeling.R")
+
+options(knitr.kable.NA = "")
+```
+
+```{r figure_and_captions, include=FALSE}
+# create table captions 
+table_cap <- captioner(prefix = "Table S", auto_space = FALSE)
+
+# create figure captions
+figure_cap <- captioner(prefix = "Figure S", auto_space = FALSE)
+
+tabCaption_model.sel <- table_cap(
+  name = "tabmodel",
+  caption = "Generalized linear mixed models were fitted with a binomial error structure and logit link function to assess the influence of environmental conditions and fishers performance on the fishing outcomes. Candidate models are ranked by the Akaike Information Criteria corrected for small samples (AICc). The $\\Delta$AICc is calculated to each model relative to the model with the smallest AIC, considered to be most parsimonious model. AICc weight shows the probability of the model to fit the data given all candidate models. Values were rounded to three digits."
+)
+
+figCaption_dharma <- figure_cap(
+  name = "figdharma",
+  caption = "Scaled residuals from 1000 simulations from the fitted model were used to validate
+the model assumptions. A Kolmogorov-Smirnov test was used to test if the observed and expected residual distributions deviate significantly."
+)
+
+figCaption_partR2 <- figure_cap(
+  name = "figpartr2",
+  caption = "Forest plots for the most parsimonious model (semi-partial *R^2^* = 0.117, 95% CI = 0.0580-0.240]) decomposing the contribuiton of net area (semi-partial *R^2^* = 0.0266, 95% CI = 0-0.158]), net distance to the dolphin (semi-partial *R^2^* = 0.0884, 95% CI = 0.0274-0.216]) and casting distance (semi-partial *R^2^* = 0.0220, 95% CI = 0-0.153]) in fishing outcomes."
+)
+
+
+```
+
+
+\newpage
+
+# Model selection
+
+```{r tabmodel}
+cat(tabCaption_model.sel)
+
+flextable(model_sel_table) %>% 
+  font(fontname = "Times", part = "all") %>% 
+  align(part = "header", align = "bottom") %>% 
+  fontsize(size = 7, part = "all") %>% 
+  theme_vanilla() %>% 
+  set_table_properties(layout = "autofit") 
+```
+
+
+# Model assumptions 
+
+```{r model_assumptions, fig.height = 7, fig.width = 7, fig.cap=figCaption_dharma}
+plot(simulationOutput)
+```
+
+\newpage
+
+# Partitioning R^2^
+
+We estimated the relative contribution of the net area, net distance to the dolphin and casting distance by decomposing the marginal R2 of the selected model into the variation explained uniquely by each predictors using semi-partial *R^2^* [@Stoffel2021]. We calculated a 95% confidence interval using parametric bootstrapping. We selected model `M10`, considering it to be the most parsimonious model (see Table S1). Then, we refitted our selected model with `lme4::glmer()` [@Bates2015] only to calculate semi-partial *R^2^* for the fixed effects. This step was necessary since `partR2::partR2()` only supports models fitted with `lme4`.      
+
+```{r figpartr2, fig.height = 4, fig.width = 6, fig.cap=figCaption_partR2}
+m10_r2
+```
+
+```{r, fig.height = 4, fig.width = 6}
+m10_r2
+```
+
+\newpage
+
+# Session information
+```{r}
+toLatex(sessionInfo(), locale = FALSE)
+```
+
+
+# References
