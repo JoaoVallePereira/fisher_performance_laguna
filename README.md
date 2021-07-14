@@ -18,18 +18,34 @@ Valle-Pereira, J.V.S [![](https://orcid.org/sites/default/files/images/orcid_16x
 ## Contents
 
 1. Files and directions
-    1.1. Data and script to reproduce the analysis
-    1.2. Supplementary material
-    1.3. Instructions
+    * 1.1. Data and script to reproduce the analysis
+    * 1.2. Supplementary material
+    * 1.3. Instructions
 
 ### 1.1. Data and script to reproduce the analysis
 
 - `setup.R`: This file contains the code to install and load the packages required to run the analyses in `vallepereiraetal_modeling.R`.
 
-- `data_fisher_modeling.rds`: This file contains the data to run the analyses in the file `vallepereiraetal_modeling.R`.
-
 - `vallepereiraetal_modeling.R`: This file contains the code to run the analyses of the manuscript.
 
+- `data_fisher_modeling.rds`: This file contains the data to run the analyses in the file `vallepereiraetal_modeling.R`. The data frame contains the following information: 
+
+| Variable        | Class              | Description                          |
+|-----------------|--------------------|--------------------------------------|
+| water_temp      | Numeric            | Water temperature in degrees Celsius |
+| wind_speed      | Numeric            | Wind speed in m/s                    |
+| wind_direc      | Factor (2 levels)  | Northern/Southern                     |
+| tide_height     | Numeric            | Tide height in centimeters (cm)       |
+| obs_tide_direc  | Factor (2 levels)  | Ebb/Flood                            |
+| fisher_reaction | Numeric            | Time in seconds                      |
+| net_area        | Numeric            | Net area in squared meters           |
+| net_angle       | Numeric            | Angle between net and dolphin heading|
+| net_dist        | Numeric            | Net distance to the dolphin          |
+| net_dist_fisher | Numeric            | Net casting distance in meters       |
+| net_dist_1stnet | Numeric            | Distance between nets to 1st net     |
+| net_catch_fish  | Integer            | Successful (1) casts or not (0)      |
+| year            | Factor (2 levels)  | Year 2018 or 2019                    |
+| day             | Factor (23 levels) | Sampling date (yyyy-mm-dd)           |
 
 ### 1.2. Supplementary material
 
