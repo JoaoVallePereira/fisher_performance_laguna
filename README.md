@@ -16,10 +16,11 @@ Valle-Pereira, J.V.S [![](https://orcid.org/sites/default/files/images/orcid_16x
 
 
 ## Contents
+
 1. Files and directions
-	1.1. Data and script to reproduce the analysis
-	1.2. Supplementary material
-	1.3. Instructions
+    1.1. Data and script to reproduce the analysis
+    1.2. Supplementary material
+    1.3. Instructions
 
 ### 1.1. Data and script to reproduce the analysis
 
@@ -40,9 +41,9 @@ Scripts contain relative paths to source functions and load data. Open an R sess
 
 ```bash
 fisher_performance_laguna/
-├── data/                     # stores all the data used in the manuscript
-├── R/                        # stores tables, figures, and appendices.
-└── supplementary_material/   # stores analysis routines and custom functions
+├── data/                     # contains the data used in the manuscript
+├── R/                        # contains the code to setup run the analyses
+└── supplementary_material/   # contains an RMarkdown file to reproduce the supplementary material
 ```
 
 ### This paper was produced using the following software and associated packages:
