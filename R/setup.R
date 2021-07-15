@@ -14,6 +14,7 @@ if(!require(lme4)){install.packages("lme4");library(lme4)}
 if(!require(patchwork)){install.packages("patchwork");library(patchwork)}
 if(!require(gghalves)){install.packages("gghalves");library(gghalves)}
 if(!require(colorblindr)){install.packages("colorblindr");library(colorblindr)}
+if(!require(reshape2)){install.packages("reshape2");library(reshape2)}
 if(!require(sjPlot)){install.packages("sjPlot");library(sjPlot)}
 if(!require(jtools)){install.packages("jtools");library(jtools)}
 if(!require(cowplot)){install.packages("cowplot");library(cowplot)}
