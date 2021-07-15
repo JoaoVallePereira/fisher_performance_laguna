@@ -62,5 +62,7 @@ fisher_performance_laguna/
 └── supplementary_material/   # contains an RMarkdown file to reproduce the supplementary material
 ```
 
+**Note:** To knit the supplementary material, set the working directory to the main folder of the project instead of the folder *supplementary_material*, where the .rmd is located. 
+
 ### This paper was produced using the following software and associated packages:
 
