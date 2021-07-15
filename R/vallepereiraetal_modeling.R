@@ -336,6 +336,9 @@ sjPlot::tab_model(M10,
                   string.stat = "Z value", string.p = "P value", p.style = "numeric", 
                   order.terms = c(1,3,2,4))
 
+# export summary
+write.table(summary(M10)$coefficients$cond, file = "./output/tab_model_summary.txt")
+
 # table S1
 model_sel_table <- all_models %>% 
   as.data.frame() %>% 
