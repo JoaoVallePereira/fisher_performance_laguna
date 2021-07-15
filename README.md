@@ -49,7 +49,7 @@ Valle-Pereira, J.V.S [![](https://orcid.org/sites/default/files/images/orcid_16x
 
 ### 1.2. Supplementary material
 
-The supplementary material can be reproduced by knitting the R Markdown file in `supplementary_material/supplementary_material.Rmd`.
+The supplementary material can be reproduced by knitting the R Markdown file in `supplementary_material/supplementary_material.Rmd`. Knitting the supplementary material will run all the analyses in `vallepereiraetal_modeling.R`, export tables and figures to a folder `./output`. The online version of the document was edited in Microsoft Word and figures were fine tuned in Inkscape. 
 
 ### 1.3. Instructions
 
