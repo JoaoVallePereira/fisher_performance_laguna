@@ -59,6 +59,7 @@ Scripts contain relative paths to source functions and load data. Open an R sess
 fisher_performance_laguna/
 ├── data/                     # contains the data used in the manuscript
 ├── R/                        # contains the code to setup run the analyses
+├── output/                   # stores tables and figures
 └── supplementary_material/   # contains an RMarkdown file to reproduce the supplementary material
 ```
 
