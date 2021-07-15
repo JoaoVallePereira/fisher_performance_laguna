@@ -67,3 +67,35 @@ fisher_performance_laguna/
 
 ### This paper was produced using the following software and associated packages:
 
+```bash
+R version 4.1.0 (2021-05-18)
+Platform: x86_64-w64-mingw32/x64 (64-bit)
+Running under: Windows 10 x64 (build 22000)
+
+Matrix products: default
+
+locale:
+[1] LC_COLLATE=English_United States.1252  LC_CTYPE=English_United States.1252   
+[3] LC_MONETARY=English_United States.1252 LC_NUMERIC=C                          
+[5] LC_TIME=English_United States.1252    
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+ [1] Rcpp_1.0.7        mvtnorm_1.1-2     lattice_0.20-44   tidyr_1.1.3       prettyunits_1.1.1 ps_1.6.0         
+ [7] rprojroot_2.0.2   assertthat_0.2.1  digest_0.6.27     utf8_1.2.1        R6_2.5.0          partR2_0.9.1     
+[13] MuMIn_1.43.17     backports_1.2.1   stats4_4.1.0      evaluate_0.14     ggplot2_3.3.5     pillar_1.6.1     
+[19] rlang_0.4.11      curl_4.3.2        rstudioapi_0.13   minqa_1.2.4       performance_0.7.2 callr_3.7.0      
+[25] nloptr_1.2.2.2    Matrix_1.3-3      effectsize_0.4.5  rmarkdown_2.9     ggeffects_1.1.0   splines_4.1.0    
+[31] lme4_1.1-27.1     munsell_0.5.0     sjPlot_2.8.9      broom_0.7.8       compiler_4.1.0    modelr_0.1.8     
+[37] xfun_0.24         pkgconfig_2.0.3   parameters_0.14.0 pkgbuild_1.2.0    htmltools_0.5.1.1 insight_0.14.2   
+[43] tidyselect_1.1.1  tibble_3.1.2      bookdown_0.22     fansi_0.5.0       withr_2.4.2       crayon_1.4.1     
+[49] dplyr_1.0.7       MASS_7.3-54       sjmisc_2.8.7      grid_4.1.0        nlme_3.1-152      xtable_1.8-4     
+[55] gtable_0.3.0      lifecycle_1.0.0   DBI_1.1.1         magrittr_2.0.1    bayestestR_0.10.0 scales_1.1.1     
+[61] datawizard_0.1.0  cli_3.0.0         estimability_1.3  remotes_2.4.0     ellipsis_0.3.2    generics_0.1.0   
+[67] vctrs_0.3.8       boot_1.3-28       sjlabelled_1.1.8  tools_4.1.0       glue_1.4.2        purrr_0.3.4      
+[73] sjstats_0.18.1    emmeans_1.6.2-1   processx_3.5.2    yaml_2.2.1        colorspace_2.0-2  knitr_1.33       
+
+```
+
