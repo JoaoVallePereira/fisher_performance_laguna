@@ -34,15 +34,15 @@ Valle-Pereira, J.V.S [![](https://orcid.org/sites/default/files/images/orcid_16x
 |-----------------|--------------------|--------------------------------------|
 | water_temp      | Numeric            | Water temperature in degrees Celsius |
 | wind_speed      | Numeric            | Wind speed in m/s                    |
-| wind_direc      | Factor (2 levels)  | Northern/Southern                     |
-| tide_height     | Numeric            | Tide height in centimeters (cm)       |
+| wind_direc      | Factor (2 levels)  | Northern/Southern                    |
+| tide_height     | Numeric            | Tide height in centimeters (cm)      |
 | obs_tide_direc  | Factor (2 levels)  | Ebb/Flood                            |
 | fisher_reaction | Numeric            | Time in seconds                      |
 | net_area        | Numeric            | Net area in squared meters           |
 | net_angle       | Numeric            | Angle between net and dolphin heading|
-| net_dist        | Numeric            | Net distance to the dolphin          |
+| net_dist        | Numeric            | Net distance to the dolphin in meters|
 | net_dist_fisher | Numeric            | Net casting distance in meters       |
-| net_dist_1stnet | Numeric            | Distance between nets to 1st net     |
+| net_dist_1stnet | Numeric            | Net distance to 1st net in meters    |
 | net_catch_fish  | Integer            | Successful (1) casts or not (0)      |
 | year            | Factor (2 levels)  | Year 2018 or 2019                    |
 | day             | Factor (23 levels) | Sampling date (yyyy-mm-dd)           |
