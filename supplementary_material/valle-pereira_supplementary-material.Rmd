@@ -74,7 +74,7 @@ the model assumptions. A Kolmogorov-Smirnov test was used to test if the observe
 
 figCaption_partR2 <- figure_cap(
   name = "figpartr2",
-  caption = "Forest plots for the most parsimonious model (semi-partial *R^2^* = 0.117, 95% CI = 0.0580-0.240]) decomposing the contribution of net area (semi-partial *R^2^* = 0.0266, 95% CI = 0-0.158]), net distance to the dolphin (semi-partial *R^2^* = 0.0884, 95% CI = 0.0274-0.216]) and casting distance (semi-partial *R^2^* = 0.0220, 95% CI = 0-0.153]) in fishing outcomes."
+  caption = "Forest plots for the most parsimonious model (semi-partial *R^2^* = 0.117, 95% CI = 0.0580-0.240) decomposing the contribution of net area (semi-partial *R^2^* = 0.0266, 95% CI = 0-0.158), net distance to the dolphin (semi-partial *R^2^* = 0.0884, 95% CI = 0.0274-0.216]) and casting distance (semi-partial *R^2^* = 0.0220, 95% CI = 0-0.153) in fishing outcomes."
 )
 
 
