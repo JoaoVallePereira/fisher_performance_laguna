@@ -406,7 +406,12 @@ m10_r2_bw <- partR2::forestplot(m10_partr2_marginal, type = "BW", line_size = 0.
 m10_r2_ir2 <- partR2::forestplot(m10_partr2_marginal, type = "IR2", line_size = 0.7, text_size = 12, point_size = 3)
 
 # export table R2
-write.table(as.data.frame(m10_partr2_marginal$R2), sep = ",", file = "./output/tab_partR2.txt")
+if(isFALSE(dir.exists("./output"))){
+  dir.create(path = "./output")
+}
+
+write.table(as.data.frame(m10_partr2_marginal$R2), sep = ",", 
+            file = "./output/tab_partR2.txt")
 
 ### PLOT AND EXPORT FIGURES ====
 
